@@ -1,0 +1,57 @@
+.translate-section {
+	background: $white1;
+
+	.bg-wrapper {
+		background: url('../../images/background2.png') no-repeat;
+		background-size: cover;
+		height: 535px;
+	}
+
+	.design-container {
+		background-color: rgba(white, 0.9);
+		padding: 60px;
+		line-height: 1.2;
+
+		.design-title {
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 1.2;
+			color: #354052;
+			position: relative;
+
+
+			&:before {
+				position: absolute;
+				background: #00b0ff;
+				left: -320px;;
+				top: 11px;
+				height: 2px;
+				width: 300px;
+				content: '';
+			}
+		}
+
+		.design-desc {
+			font-size: 18px;
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.translate-section {
+		.bg-wrapper {
+			background: url('../../images/background-1920px.jpg') no-repeat;
+			background-size: cover;
+		}
+	}
+
+}
+
+@media (max-width: 1440px) {
+	.translate-section {
+		display: none;
+	}
+
+}

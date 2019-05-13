@@ -1,0 +1,82 @@
+$base-font-size: 16px;
+
+//function to accept number value without unit
+@function trim-units($length) {
+    @return $length/ (($length * 0 ) + 1 );
+}
+
+@function rem($value) {
+    $value: trim-units( $value );
+    $base-font-size: trim-units( $base-font-size );
+
+    @return ($value / $base-font-size) * 1rem;
+}
+
+@function em($value) {
+    $value: trim-units( $value );
+    $base-font-size: trim-units( $base-font-size );
+
+    @return ($value / $base-font-size) * 1em;
+}
+
+@mixin hover-focus-active {
+    &:hover,
+        &:focus,
+        &:active {
+        @content;
+    }
+}
+@mixin uppercase-letter-spacing( $letter-spacing) {
+    letter-spacing: $letter-spacing;
+    text-transform: uppercase;
+}
+
+@mixin form-placeholder {
+    ::-webkit-input-placeholder {
+        @content;
+    }
+    ::-moz-placeholder {
+        @content;
+    }
+    :-moz-placeholder {
+        @content;
+    }
+    :-ms-input-placeholder {
+        @content;
+    }
+}
+
+// Center Block
+//
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+// Easy horizontal & vertical centering of anything in IE9+
+//
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+}
+// Easy vertical centering of anything in IE9+
+//
+@mixin vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY( -50% );
+}
+
+@mixin box-shadow($horiz : .5em , $vert : .5em , $blur : 0px , $spread : 0px , $color : #000000, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow:inset $top $left $blur $color;
+        -moz-box-shadow:inset $top $left $blur $color;
+        box-shadow:inset $top $left $blur $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
+}

@@ -1,0 +1,56 @@
+.precision-testing-section {
+	background: #fcfcfc url(../../images/WAVES.png) no-repeat center 60px;
+	background-size: cover;
+
+	.measurement-container {
+
+		.measurement-title {
+			font-size: 22px;
+			line-height: 26px;
+			color: #354052;
+			font-weight: 700;
+
+			&:before {
+				background: #fc9e04;
+				content: '';
+				height: 3px;
+				position: absolute;
+				right: -65px;
+				top: 10px;
+				width: 300px;
+				z-index: 1;
+			}
+		}
+
+		.measurement-desc {
+			font-size: 18px;
+			line-height: 27px;
+		}
+	}
+
+	.pricing-container {
+		padding-top: 150px;
+
+		.pricing-title {
+			font-size: 48px;
+			color: #354052;
+			line-height: 52.8px;
+		}
+
+		.pricing-desc {
+			font-size: 18px;
+			line-height: 27px;
+		}
+
+		.btn-container a {
+			margin: 16px;
+		}
+	}
+}
+
+
+
+@media (max-width: 1140px) { 
+
+	.precision-testing-section { display: none; } 
+}

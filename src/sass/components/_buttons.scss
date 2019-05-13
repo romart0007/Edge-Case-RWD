@@ -1,0 +1,53 @@
+.btn {
+	border-radius: 0 !important;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	font-size: 14px;
+	font-weight: bold;
+	height: 45px;
+	line-height: 21px;
+	padding: 12px;
+	width: 200px;
+
+	&:focus,
+	&:active,
+	&:hover { 
+		outline: 0 none;
+	}
+
+	.btn-arrow {
+		height: 13px;
+		margin-bottom: -1px;
+		margin-left: 15px;
+	}
+
+	//orange btn
+	&.style1 {
+		background-color: #fc9e04;
+		color: #fff;
+	}
+
+	//white btn
+	&.style2 {
+		background-color: #fff;
+		color: #354052;
+	}
+
+	&.style3 {
+    background-color: #00b0ff;
+    border-color: #00b0ff;
+    color: #fff;
+	}
+}
+
+.custom-btn.text-link-blue {
+	color: #00b0ff;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+
+	.btn-arrow {
+		height: 13px;
+		margin-top: -5px;
+		margin-left: 15px;
+	}
+}

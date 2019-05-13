@@ -1,0 +1,31 @@
+// bootstrap overide font and icon colors
+$white-1: #fff;
+$black-1: #000;
+$black-3: #99a0a1;
+$black-4: #3e3737;
+$gray-1: #eff3f4;
+$gray-2: #808e8f;
+$blue-3: #afc4c9;
+$blue-1: #28addb;
+$blue-2: #48a5ca;
+$bg-white: $white-1;
+$enable-rounded: false;
+
+//font family;
+$brandon: 'Brandon Grotesque', sans-serif;
+
+.rounded {
+	border-radius: 3rem !important;
+}
+span { color: #00a6ff; cursor: pointer;}
+.blue-1 { color: #00a6ff !important;}
+.blue-2 { color: #4fb9de !important; }
+.black-1 { color: #212324;}
+.black-2 { color: #151717 !important; }
+.red-1 { color: #ef6969;}
+.bg-1 { background: #00a6ff !important;}
+.gray-1 { color: #3c4142; }
+.gray-2 { color: #a9b3b6;}
+.gray-3 { color: #827d7d;}
+.check-active { color: #28addb; }
+.bg-gray-1 { background: #c7cfd3 !important;}

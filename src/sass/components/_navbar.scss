@@ -1,0 +1,98 @@
+.navbar {
+
+	.navbar-brand .header-logo {
+		width: 132px;
+	}
+
+	.nav.nav-pills {
+		padding-top: 6px;
+
+		.nav-item {
+
+			&:first-child { margin-left: 0; }
+
+			a {
+				color: #fff;
+				border-radius: 0;
+				font-size: 14px;
+				font-weight: 500;
+				padding: 0;
+			}
+		}
+
+		.btn-arrow {
+			position: absolute;
+			top: 0px;
+			right: -13px;
+		}
+
+		.divider {
+			margin-top: -2px;
+			margin-left: 10px;
+			margin-right: 10px;
+			color: #fff;
+		}
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.nav-item {
+		background: transparent;
+		margin: 0 15px;
+	}
+}
+
+@media (min-width: 992px) {
+	.nav-item {
+		background: transparent;
+		margin: 0 11px;
+	}
+}
+
+@media (max-width: 991px) {
+	#toggleNav {
+		padding: 0;
+		outline: none;
+		border: none;
+	}
+
+	#nav-icon3 {
+		position: relative;
+		width: 30px;
+		height: 25px;
+		top: 3px;
+		z-index: 1;
+
+		span {
+			display: block;
+			position: absolute;
+			height: 4px;
+			width: 30px;
+			background: #fff;
+			border-radius: 9px;
+			opacity: 1;
+			right: 0;
+			-webkit-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: 0.25s ease-in-out;
+			-o-transition: 0.25s ease-in-out;
+			transition: 0.25s ease-in-out;
+
+			&:fist-child {
+				top: 0;
+			}
+
+			&:nth-child(2), 
+			&:nth-child(3) {
+				top: 10px;
+			}
+
+			&:nth-child(4) {
+				top: 20px;
+			}
+		}
+
+	}
+}

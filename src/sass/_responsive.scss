@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+	.hero .hero-info {
+		padding: 100px 60px;
+	}
+
+	.moment-video-container { text-align: center; }
+
+	.moment-info {
+		margin: 0 auto;
+		text-align: center !important;
+	}
+
+	.custom-moment .moment-info { padding-right: 20px !important; }
+
+	.auto-moment {
+		.moment-grp {
+			flex-direction: column-reverse;
+
+			&.row { margin: 0 auto; }
+		}
+		.moment-info { padding-left: 0 !important; }
+
+	}
+}
