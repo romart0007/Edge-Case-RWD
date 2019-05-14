@@ -156,3 +156,76 @@
 		max-width: 2160px !important;
 	}
 }
+@media (max-width: 1199px) {
+	.revenue-section {
+		
+		& > .container { max-width: 98%; }
+
+		.revenue-info .revenue-title {
+			font-size: 36px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.revenue-section {
+		padding-top: 50px !important;
+		padding-bottom: 50px !important;
+
+		.unlock-container .revenue-description {
+			font-size: 20px;
+		}
+
+		.revenue-info .we-do-container {
+			margin-top: 115px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.revenue-section {
+		.revenue-info {
+			float: unset;
+			margin-left: 0;
+			position: relative;
+
+			// .revenue-title {
+				// 	font-size: 36px;
+				// }
+
+				.unlock-container .revenue-description {
+					font-size: 18px;
+					line-height: 27px;
+				}
+
+				.we-do-container {
+					margin-top: 76px;
+
+					.predictive-description {
+						margin-top: 7px;
+						margin-bottom: 7px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 575px) {
+		.revenue-section {
+			padding-top: 25px !important;
+			padding-bottom: 40 !important;
+
+			// .revenue-info .revenue-title {
+				// 	font-size: 24px;
+				// }
+
+				.revenue-info .we-do-container {
+
+					.predictive-description {
+						font-size: 18px;
+						line-height: 26px;
+						max-width: 325px;
+					}
+				}
+			}
+		}

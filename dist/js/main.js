@@ -1,0 +1,1 @@
+$(function(){$(document).scroll(function(){var o=$(".fixed-top");o.toggleClass("scrolled",$(this).scrollTop()>o.height())})});

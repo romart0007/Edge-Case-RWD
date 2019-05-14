@@ -1,7 +1,6 @@
 .hero-section {
 	background-color: #172836;
 	height: 675px;
-	position: relative;
 
 	&:before {
 		content: '';
@@ -75,10 +74,87 @@
 			margin-left: -200%;
 			min-width: 100%;
 			min-height: 100%;
-			opacity: 0.7;
+			opacity: 0.2;
 			position: relative;
 			top: 0;
 			z-index: 0;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.hero-section {
+		height: 530px;
+
+		.hero_info  {
+			top: 145px;
+			
+			.hero-btn-container {
+				margin-top: 25px;
+			}
+
+			.hero-desc-lg {
+				font-size: 64px;
+			}
+
+			.hero-desc-sm {
+				font-size: 20px;
+			}
+		}
+
+		.logo-container {
+			margin-top: 100px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.hero-section {
+		.logo-container {
+			margin-top: 55px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.hero-section {
+
+		.hero_info {
+			top: 125px;
+
+			.hero-btn-container {
+				flex-direction: column;
+				justify-content: center;
+
+				.btn {
+					width: 180px;
+					height: 40px;
+					padding-top: 10px;
+
+					&.style2 {
+						margin-left: 0 !important;
+						margin-top: 10px;		
+					}
+				}
+			}
+		}
+
+		.logo-container {
+			margin-top: 43px;
+		}
+	}
+}
+
+
+@media (max-width: 575px) {
+	.hero-section {
+		height: 470px;
+
+		.hero_info .hero-desc-lg {
+			font-size: 36px;
+		}
+		.hero_info .hero-desc-sm {
+			font-size: 18px;
 		}
 	}
 }

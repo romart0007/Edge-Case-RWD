@@ -2,4 +2,12 @@ header {
 	position: fixed;
 	top: 0;
 	background: transparent;
+
+	&.scrolled { background: #172836; }
+}
+
+@media (max-width: 991px) {
+	.header-banner {
+		background: #172836 !important;
+	}
 }

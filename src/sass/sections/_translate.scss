@@ -2,7 +2,7 @@
 	background: $white1;
 
 	.bg-wrapper {
-		background: url('../../images/background2.png') no-repeat;
+		background: url('../images/background2.png') no-repeat;
 		background-size: cover;
 		height: 535px;
 	}
@@ -42,7 +42,7 @@
 @media (min-width: 1440px) {
 	.translate-section {
 		.bg-wrapper {
-			background: url('../../images/background-1920px.jpg') no-repeat;
+			background: url('../images/background-1920px.jpg') no-repeat;
 			background-size: cover;
 		}
 	}

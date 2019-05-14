@@ -33,9 +33,9 @@
 	}
 
 	&.style3 {
-    background-color: #00b0ff;
-    border-color: #00b0ff;
-    color: #fff;
+		background-color: #00b0ff;
+		border-color: #00b0ff;
+		color: #fff;
 	}
 }
 
@@ -51,3 +51,15 @@
 		margin-left: 15px;
 	}
 }
+
+@media (max-width: 767px) {
+	.btn {
+		&.style1,
+		&.style2,
+		&.style3 {     
+			width: 180px !important;
+			height: 40px !important;
+			padding-top: 10px !important; 
+		}
+	}
+} 
