@@ -84,26 +84,30 @@
 
 @media (max-width: 1024px) {
 	.hero-section {
-		height: 530px;
+		height: 510px;
 
 		.hero_info  {
-			top: 145px;
+			top: 166px;
 			
 			.hero-btn-container {
-				margin-top: 25px;
+				margin-top: 18px;
 			}
 
 			.hero-desc-lg {
 				font-size: 64px;
+				line-height: 1.1;
+
 			}
 
 			.hero-desc-sm {
 				font-size: 20px;
+				line-height: .5;
 			}
 		}
 
 		.logo-container {
-			margin-top: 100px;
+			margin-top: 85px;
+			max-width: 90%;
 		}
 	}
 }
@@ -152,9 +156,64 @@
 
 		.hero_info .hero-desc-lg {
 			font-size: 36px;
+			line-height: 39px;
+
 		}
-		.hero_info .hero-desc-sm {
-			font-size: 18px;
+		.hero_info { 
+			top: 117px;
+
+			.hero-desc-sm {
+				font-size: 18px;
+			}
+
+			.hero-btn-container {
+				margin-top: 5px;
+			}
+
 		}
+	}
+}
+
+
+@media (max-width: 391px) {
+	.hero-section {
+		height: 527px;
+
+		.hero_info {
+
+			.hero-desc-sm {
+				font-size: 17px;
+				line-height: 1.55;
+				letter-spacing: .06em;
+			}
+
+			.logo-container {
+				max-width: 100%;
+
+				.custom-sm {
+					padding-left: 0;
+					padding-right: 0;
+					position: relative;
+					overflow: hidden;
+					height: 60px;
+
+					img { 
+						transform: scale(1.2);
+						position: absolute;
+						left: 0;
+					}
+				}
+			}
+
+		}
+
+		.col-xs-12:first-child { position: relative; }
+	}
+}
+
+
+@media (max-width: 330px) {
+	.hero-section {
+		height: 510px;
 	}
 }

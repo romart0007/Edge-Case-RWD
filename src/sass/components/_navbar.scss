@@ -112,7 +112,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	.navbar {
 		padding: .25rem;
 
@@ -141,6 +141,7 @@
 		opacity: 1;
 
 		.nav.nav-pills {
+			height: 100vh;
 
 			.divider { display: none; }
 
@@ -175,4 +176,9 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 391px) {
+	.navbar { padding: 0; }
+
 }

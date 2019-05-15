@@ -87,6 +87,14 @@ footer {
 	}
 }
 
+@media (max-width: 1024px) {
+	footer .footer-info {
+		a, address { color: rgba(252, 252, 252, .7);  }
+	}
+}
+
+
+
 
 @media (max-width: 767px) {
 
@@ -105,6 +113,7 @@ footer {
 				display: inline-block;
 				margin-left: -15px;	
 			}
+
 		}
 
 		.footer-logo {
@@ -119,6 +128,19 @@ footer {
 
 }
 
+@media (max-width: 391px) {
 
+	footer {
 
+		padding: 45px 15px 90px !important;
 
+		.footer-info a {  line-height: 18px; }
+
+		.footer-logo img {
+			height: 46.5px !important;
+		}
+
+		.row.add-top-65 {  margin-top: 25px !important; }
+
+	}
+}
